@@ -341,20 +341,6 @@ body, html {
     text-align: center;
 }
 
-#boton {
-    background-color: #5c5c5c; /* Verde */
-    border: none;
-    color: white;
-    padding: 15px 50px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 110%;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 40px;
-}
-
 .centrarboton {
     display: flex;
     justify-content: center;
@@ -626,5 +612,20 @@ body, html {
   height: auto;
   object-fit: cover;
 }
+
+#boton {
+    background-color: #5c5c5c; /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 110%;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
 
 }
