@@ -11,8 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- if you see this you are gay, no sorry, wasn't that. It was, this is an emergency web page, so if you stop seing this is the final project.-->
+    <link rel="icon" type="image/png" href="finalcontent/favicon.png">
 </head>
 <body>
+    <div id="loader">
+        
+        <video autoplay muted playsinline>
+            <source src="finalcontent/0116.mp4" type="video/mp4">
+        </video>
+    </div>
+<div id="content">
     <section class="hero-video">
         <video autoplay muted loop playsinline id="video-fondo">
             <source src="finalcontent/VideoD1.mp4" type="video/mp4">
@@ -50,7 +58,7 @@
                     <p class="ralewayClassNormal textico">We believe that hard work, efficiency, and results are the fundamental basis for a successful campaign. We don't believe in myths, word of mouth or anything that is not actually guaranteed. We just deliver real results.</p>
                     <p class="ralewayClassBold textico">If you are looking for an agency that values your time and makes your money worth it, you landed in the right place.</p>
                     <div class="centrarboton">
-                        <button  onclick="document.getElementById('d6').scrollIntoView({behavior: 'smooth'})" type="button" id="boton" class="ralewayClassBold">Talk To Our Team Today. <br> <span class="ralewayClassNormal">We are waiting for you.</span></button>
+                        <button onclick="document.getElementById('d6').scrollIntoView({behavior: 'smooth'})" type="button" id="boton" class="ralewayClassBold">Talk To Our Team Today. <br> <span class="ralewayClassNormal">We are waiting for you.</span></button>
                     </div>
                 </div>
                 <div id="d2img">
@@ -133,7 +141,7 @@
                     <p class="ralewayClassNormal textico">New Gen Way was founded by a couple of friends that saw a common flaw in many businesses, they weren't running Ads.</p>
                     <p class="ralewayClassNormal textico">We decided to enter the market to help these businesses grow more than they already were through ads. We showed them the power of paid advertising, they gave us green light, we delivered, and we didn't get just another simple client, we got a client that truly trusted us.</p>
                     <div class="centrarboton">
-                        <button onclick="document.getElementById('d6').scrollIntoView({behavior: 'smooth'})" type="button" id="boton" class="ralewayClassBold">Talk To Our Team Today. <br> <span class="ralewayClassNormal">We are waiting for you.</span></button>
+                        <button  onclick="window.open('finalcontent/whoarewe.pdf', '_blank')" type="button" id="boton" class="ralewayClassBold">Who are we? <br> <span class="ralewayClassNormal">Click here to know more.</span></button>
                     </div>
                 </div>
                 </div>
@@ -198,5 +206,19 @@
         <p class="ralewayClassNormal text-center" style="color: white;">© 2026 New Gen Way. All rights reserved. | All achievements can be yours too.</p>
         
     </footer>
+</div>
+<script>
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      const loader = document.getElementById("loader");
+      loader.style.opacity = "0";
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 500); // Wait for the fade-out transition to complete
+    }, 2000); // Keep the loader visible for 2 seconds
+    const content = document.getElementById("content");
+    content.style.display = "block";
+  });
+</script>
 </body>
 </html>
